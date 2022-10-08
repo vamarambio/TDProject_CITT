@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="812864790371660">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="398608092711022" type="Player">
+                    <param id="0" name="Instance variable">HP</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="761121115077382" type="Player" />
+            </actions>
+        </event-block>
+        <event-block sid="669367223508653">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="117147731987805" type="Goal">
+                    <param id="0" name="Instance variable">HP</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="873119118929787" type="Goal" />
+            </actions>
+        </event-block>
+        <event-block sid="211069283336450">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="856629202638269" type="Enemy">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="670561722677249" type="Enemy" />
+                <action id="-12" name="Subtract from" sid="179566577707714" type="Player">
+                    <param id="0" name="Instance variable">HP</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="999580738832570">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="278283850406682" type="Enemy">
+                    <param id="0" name="Object">Goal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="562953282692967" type="Enemy" />
+                <action id="-12" name="Subtract from" sid="945234012532451" type="Goal">
+                    <param id="0" name="Instance variable">HP</param>
+                    <param id="1" name="Value">Enemy.HP</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="917488733728210">
+            <conditions>
+                <condition id="0" name="On click" sid="682687506563443" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="438688754955943" type="Enemy">
+                    <param id="0" name="X">Goal.X</param>
+                    <param id="1" name="Y">Goal.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="150067184853933">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="647940012766951" type="Enemy" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="447605211689813" type="Enemy" />
+            </actions>
+        </event-block>
+        <event-block sid="230296439512015">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="435569002966571" type="Enemy">
+                    <param id="0" name="Object">BarbedWire</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="987771717867213" type="Enemy">
+                    <param id="0" name="Instance variable">HP</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="615192356917601">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="753482610189260" type="Enemy">
+                    <param id="0" name="Instance variable">HP</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="752657272339148" type="Enemy" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
