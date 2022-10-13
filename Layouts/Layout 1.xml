@@ -83,8 +83,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>113.54498291</x>
-                        <y>162.095108032</y>
+                        <x>32</x>
+                        <y>32</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -126,14 +126,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>208.432006836</x>
-                        <y>164.684844971</y>
+                        <x>128</x>
+                        <y>128</y>
                         <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
+                        <width>64</width>
+                        <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.585034013</hotspotX>
+                        <hotspotY>0.554913282</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -163,12 +163,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>519.432006836</x>
-                        <y>393.684844971</y>
+                        <x>434.083618164</x>
+                        <y>326.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -204,12 +205,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>713.432006836</x>
-                        <y>163.684844971</y>
+                        <x>628.083618164</x>
+                        <y>96.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -245,12 +247,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>662.432006836</x>
-                        <y>197.684844971</y>
+                        <x>577.083618164</x>
+                        <y>130.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -286,12 +289,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>606.432006836</x>
-                        <y>208.684844971</y>
+                        <x>521.083618164</x>
+                        <y>141.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -327,12 +331,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>616.432006836</x>
-                        <y>214.684844971</y>
+                        <x>531.083618164</x>
+                        <y>147.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -368,12 +373,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>647.432006836</x>
-                        <y>204.684844971</y>
+                        <x>562.083618164</x>
+                        <y>137.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -409,12 +415,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>666.432006836</x>
-                        <y>152.684844971</y>
+                        <x>581.083618164</x>
+                        <y>85.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -450,12 +457,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>514.432006836</x>
-                        <y>266.684844971</y>
+                        <x>429.083618164</x>
+                        <y>199.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -491,12 +499,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>453.432006836</x>
-                        <y>302.684844971</y>
+                        <x>368.083618164</x>
+                        <y>235.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -532,12 +541,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>483.432006836</x>
-                        <y>356.684844971</y>
+                        <x>398.083618164</x>
+                        <y>289.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -573,12 +583,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>439.432006836</x>
-                        <y>370.684844971</y>
+                        <x>354.083618164</x>
+                        <y>303.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -614,12 +625,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>407.432006836</x>
-                        <y>322.684844971</y>
+                        <x>322.083618164</x>
+                        <y>255.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -655,12 +667,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>391.432006836</x>
-                        <y>363.684844971</y>
+                        <x>306.083618164</x>
+                        <y>296.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -696,12 +709,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>376.432006836</x>
-                        <y>297.684844971</y>
+                        <x>291.083618164</x>
+                        <y>230.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -737,12 +751,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>376.432006836</x>
-                        <y>304.684844971</y>
+                        <x>291.083618164</x>
+                        <y>237.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -778,12 +793,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>469.432006836</x>
-                        <y>393.684844971</y>
+                        <x>384.083618164</x>
+                        <y>326.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -819,12 +835,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>376.432006836</x>
-                        <y>379.684844971</y>
+                        <x>291.083618164</x>
+                        <y>312.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -860,12 +877,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>643.432006836</x>
-                        <y>270.684844971</y>
+                        <x>558.083618164</x>
+                        <y>203.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -901,12 +919,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>431.432006836</x>
-                        <y>392.684844971</y>
+                        <x>346.083618164</x>
+                        <y>325.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -942,12 +961,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>635.432006836</x>
-                        <y>142.684844971</y>
+                        <x>550.083618164</x>
+                        <y>75.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -983,12 +1003,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>689.432006836</x>
-                        <y>141.684844971</y>
+                        <x>604.083618164</x>
+                        <y>74.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1024,12 +1045,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>742.432006836</x>
-                        <y>181.684844971</y>
+                        <x>657.083618164</x>
+                        <y>114.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1065,12 +1087,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>739.432006836</x>
-                        <y>267.684844971</y>
+                        <x>654.083618164</x>
+                        <y>200.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1106,12 +1129,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>783.432006836</x>
-                        <y>204.684844971</y>
+                        <x>698.083618164</x>
+                        <y>137.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1147,12 +1171,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>796.432006836</x>
-                        <y>265.684844971</y>
+                        <x>711.083618164</x>
+                        <y>198.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1188,12 +1213,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>561.432006836</x>
-                        <y>328.684844971</y>
+                        <x>476.083618164</x>
+                        <y>261.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1229,12 +1255,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>526.432006836</x>
-                        <y>307.684844971</y>
+                        <x>441.083618164</x>
+                        <y>240.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1270,37 +1297,16 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>535.432006836</x>
-                        <y>355.684844971</y>
+                        <x>450.083618164</x>
+                        <y>288.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="pasBarbedWire" uid="33">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>290.432006836</x>
-                        <y>166.684844971</y>
-                        <z>0</z>
-                        <width>91</width>
-                        <height>101</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1318,15 +1324,15 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>259.432006836</x>
-                        <y>166.684844971</y>
+                        <x>32</x>
+                        <y>96</y>
                         <z>0</z>
-                        <width>91</width>
-                        <height>101</height>
+                        <width>16</width>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
+                        <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -1340,11 +1346,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>230.432006836</x>
-                        <y>167.684844971</y>
+                        <x>96</x>
+                        <y>32</y>
                         <z>0</z>
-                        <width>91</width>
-                        <height>101</height>
+                        <width>16</width>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1377,12 +1383,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>427.432006836</x>
-                        <y>340.684844971</y>
+                        <x>342.083618164</x>
+                        <y>273.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1418,12 +1425,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>482.432006836</x>
-                        <y>353.684844971</y>
+                        <x>397.083618164</x>
+                        <y>286.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1459,12 +1467,13 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>403.432006836</x>
-                        <y>364.684844971</y>
+                        <x>318.083618164</x>
+                        <y>297.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1500,15 +1509,131 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>458.432006836</x>
-                        <y>377.684844971</y>
+                        <x>373.083618164</x>
+                        <y>310.218963623</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="pasBarbedWire" uid="34">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>128</x>
+                        <y>32</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="pasBarbedWire" uid="33">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>32</x>
+                        <y>128</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>1.570796371</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="debugTurret" uid="35">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Turret">
+                            <properties>
+                                <range>500</range>
+                                <rate-of-fire>1</rate-of-fire>
+                                <rotate>Yes</rotate>
+                                <rotate-speed>180</rotate-speed>
+                                <target-mode>First in range</target-mode>
+                                <predictive-aim>No</predictive-aim>
+                                <projectile-speed>500</projectile-speed>
+                                <initial-state>Enabled</initial-state>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>112.001800537</x>
+                        <y>266.323608398</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="debugBullet" uid="38">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>193.286621094</x>
+                        <y>266.323608398</y>
+                        <z>0</z>
+                        <width>8</width>
+                        <height>16</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

@@ -33,5 +33,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/debugGoal/" />
         <folder expanded="1" path="animation-folder/pasBarbedWire/" />
         <folder expanded="1" path="animation-folder/mapTiles/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/debugTurret/" />
+        <folder expanded="1" path="animation-folder/debugBullet/" />
     </folders-expanded>
 </c2uistate>

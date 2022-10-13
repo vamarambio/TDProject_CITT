@@ -88,6 +88,11 @@
                     <param id="0" name="Instance variable">HP</param>
                     <param id="1" name="Value">10</param>
                 </action>
+                <action behavior="Flash" id="0" name="Flash" sid="544396585175095" type="debugEnemy">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">0.5</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="615192356917601">
@@ -128,7 +133,7 @@
                         </action>
                         <action id="-3" name="Create object" sid="733665610448647" type="System">
                             <param id="0" name="Object to create">mapTiles</param>
-                            <param id="1" name="Layer">0</param>
+                            <param id="1" name="Layer">tileArray.CurValue</param>
                             <param id="2" name="X">32 + (tileArray.CurX*64)</param>
                             <param id="3" name="Y">32 + (tileArray.CurY*64)</param>
                         </action>
@@ -138,6 +143,47 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="752226098110293">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="383539224581058" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Turret" id="0" name="Acquire target" sid="882226381660528" type="debugTurret">
+                    <param id="0" name="Target">debugEnemy</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="410277303738211">
+            <conditions>
+                <condition behavior="Turret" id="1" name="On shoot" sid="607777894255992" type="debugTurret" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="801186047098246" type="debugBullet">
+                    <param id="0" name="Object">debugBullet</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="912645138929815">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="497577022327028" type="debugBullet">
+                    <param id="0" name="Object">debugEnemy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="807044768574585" type="debugBullet" />
+                <action id="-12" name="Subtract from" sid="333488128264822" type="debugEnemy">
+                    <param id="0" name="Instance variable">HP</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="418181201591586" type="debugEnemy">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">0.5</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
