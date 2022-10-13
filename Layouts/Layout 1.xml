@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="858558347373944">
+        <layer name="Background" sid="858558347373944">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,28 +29,21 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Terrain1" uid="40">
+                <instance type="mapTiles" uid="32">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>486</x>
-                        <y>246</y>
+                        <x>623</x>
+                        <y>1201</y>
                         <z>0</z>
-                        <width>37</width>
-                        <height>191</height>
+                        <width>64</width>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -58,94 +51,26 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Terrain0" uid="30">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>178</x>
-                        <y>239</y>
-                        <z>0</z>
-                        <width>356</width>
-                        <height>480</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Terrain1" uid="39">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>758</x>
-                        <y>490</y>
-                        <z>0</z>
-                        <width>266</width>
-                        <height>192</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Terrain1" uid="32">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>561</x>
-                        <y>78</y>
-                        <z>0</z>
-                        <width>440</width>
-                        <height>232</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Goal" uid="29">
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Entities" sid="847391980735636">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="debugGoal" uid="29">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -158,11 +83,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>170</x>
-                        <y>250</y>
+                        <x>113.54498291</x>
+                        <y>162.095108032</y>
                         <z>0</z>
-                        <width>50</width>
-                        <height>50</height>
+                        <width>64</width>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -170,7 +95,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Player" uid="0">
+                <instance type="player" uid="0">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -201,8 +126,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>249</x>
-                        <y>248</y>
+                        <x>208.432006836</x>
+                        <y>164.684844971</y>
                         <z>0</z>
                         <width>50</width>
                         <height>50</height>
@@ -213,7 +138,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="1">
+                <instance type="debugEnemy" uid="1">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -242,8 +167,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>560</x>
-                        <y>477</y>
+                        <x>519.432006836</x>
+                        <y>393.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -254,7 +179,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="2">
+                <instance type="debugEnemy" uid="2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -283,8 +208,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>754</x>
-                        <y>247</y>
+                        <x>713.432006836</x>
+                        <y>163.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -295,7 +220,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="3">
+                <instance type="debugEnemy" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -324,8 +249,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>703</x>
-                        <y>281</y>
+                        <x>662.432006836</x>
+                        <y>197.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -336,7 +261,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="4">
+                <instance type="debugEnemy" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -365,8 +290,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>647</x>
-                        <y>292</y>
+                        <x>606.432006836</x>
+                        <y>208.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -377,7 +302,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="5">
+                <instance type="debugEnemy" uid="5">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -406,8 +331,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>657</x>
-                        <y>298</y>
+                        <x>616.432006836</x>
+                        <y>214.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -418,7 +343,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="6">
+                <instance type="debugEnemy" uid="6">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -447,8 +372,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>688</x>
-                        <y>288</y>
+                        <x>647.432006836</x>
+                        <y>204.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -459,7 +384,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="7">
+                <instance type="debugEnemy" uid="7">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -488,8 +413,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>707</x>
-                        <y>236</y>
+                        <x>666.432006836</x>
+                        <y>152.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -500,7 +425,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="8">
+                <instance type="debugEnemy" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -529,8 +454,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>555</x>
-                        <y>350</y>
+                        <x>514.432006836</x>
+                        <y>266.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -541,7 +466,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="9">
+                <instance type="debugEnemy" uid="9">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -570,8 +495,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>494</x>
-                        <y>386</y>
+                        <x>453.432006836</x>
+                        <y>302.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -582,7 +507,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="10">
+                <instance type="debugEnemy" uid="10">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -611,8 +536,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>524</x>
-                        <y>440</y>
+                        <x>483.432006836</x>
+                        <y>356.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -623,7 +548,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="11">
+                <instance type="debugEnemy" uid="11">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -652,8 +577,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>480</x>
-                        <y>454</y>
+                        <x>439.432006836</x>
+                        <y>370.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -664,7 +589,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="12">
+                <instance type="debugEnemy" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -693,8 +618,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>448</x>
-                        <y>406</y>
+                        <x>407.432006836</x>
+                        <y>322.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -705,7 +630,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="13">
+                <instance type="debugEnemy" uid="13">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -734,8 +659,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>432</x>
-                        <y>447</y>
+                        <x>391.432006836</x>
+                        <y>363.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -746,7 +671,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="14">
+                <instance type="debugEnemy" uid="14">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -775,8 +700,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>417</x>
-                        <y>381</y>
+                        <x>376.432006836</x>
+                        <y>297.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -787,7 +712,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="15">
+                <instance type="debugEnemy" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -816,8 +741,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>417</x>
-                        <y>388</y>
+                        <x>376.432006836</x>
+                        <y>304.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -828,7 +753,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="16">
+                <instance type="debugEnemy" uid="16">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -857,8 +782,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>510</x>
-                        <y>477</y>
+                        <x>469.432006836</x>
+                        <y>393.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -869,7 +794,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="17">
+                <instance type="debugEnemy" uid="17">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -898,8 +823,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>417</x>
-                        <y>463</y>
+                        <x>376.432006836</x>
+                        <y>379.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -910,7 +835,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="18">
+                <instance type="debugEnemy" uid="18">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -939,8 +864,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>684</x>
-                        <y>354</y>
+                        <x>643.432006836</x>
+                        <y>270.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -951,7 +876,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="19">
+                <instance type="debugEnemy" uid="19">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -980,8 +905,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>472</x>
-                        <y>476</y>
+                        <x>431.432006836</x>
+                        <y>392.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -992,7 +917,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="20">
+                <instance type="debugEnemy" uid="20">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1021,8 +946,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>676</x>
-                        <y>226</y>
+                        <x>635.432006836</x>
+                        <y>142.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1033,7 +958,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="21">
+                <instance type="debugEnemy" uid="21">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1062,8 +987,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>730</x>
-                        <y>225</y>
+                        <x>689.432006836</x>
+                        <y>141.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1074,7 +999,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="22">
+                <instance type="debugEnemy" uid="22">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1103,8 +1028,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>783</x>
-                        <y>265</y>
+                        <x>742.432006836</x>
+                        <y>181.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1115,7 +1040,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="23">
+                <instance type="debugEnemy" uid="23">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1144,8 +1069,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>780</x>
-                        <y>351</y>
+                        <x>739.432006836</x>
+                        <y>267.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1156,7 +1081,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="24">
+                <instance type="debugEnemy" uid="24">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1185,8 +1110,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>824</x>
-                        <y>288</y>
+                        <x>783.432006836</x>
+                        <y>204.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1197,7 +1122,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="25">
+                <instance type="debugEnemy" uid="25">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1226,8 +1151,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>837</x>
-                        <y>349</y>
+                        <x>796.432006836</x>
+                        <y>265.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1238,7 +1163,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="26">
+                <instance type="debugEnemy" uid="26">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1267,8 +1192,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>602</x>
-                        <y>412</y>
+                        <x>561.432006836</x>
+                        <y>328.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1279,7 +1204,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="27">
+                <instance type="debugEnemy" uid="27">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1308,8 +1233,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>567</x>
-                        <y>391</y>
+                        <x>526.432006836</x>
+                        <y>307.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1320,7 +1245,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="28">
+                <instance type="debugEnemy" uid="28">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1349,8 +1274,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>576</x>
-                        <y>439</y>
+                        <x>535.432006836</x>
+                        <y>355.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1361,7 +1286,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BarbedWire" uid="33">
+                <instance type="pasBarbedWire" uid="33">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1371,8 +1296,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>331</x>
-                        <y>250</y>
+                        <x>290.432006836</x>
+                        <y>166.684844971</y>
                         <z>0</z>
                         <width>91</width>
                         <height>101</height>
@@ -1383,40 +1308,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="barMaxHP" uid="34">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Anchor">
-                            <properties>
-                                <left-edge>Window left</left-edge>
-                                <top-edge>Window top</top-edge>
-                                <right-edge>None</right-edge>
-                                <bottom-edge>None</bottom-edge>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>444</x>
-                        <y>549</y>
-                        <z>0</z>
-                        <width>69</width>
-                        <height>12</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="barHP" uid="35">
+                <instance type="pasBarbedWire" uid="36">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1426,30 +1318,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>443</x>
-                        <y>575</y>
-                        <z>0</z>
-                        <width>70</width>
-                        <height>12</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="BarbedWire" uid="36">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>300</x>
-                        <y>250</y>
+                        <x>259.432006836</x>
+                        <y>166.684844971</y>
                         <z>0</z>
                         <width>91</width>
                         <height>101</height>
@@ -1460,7 +1330,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BarbedWire" uid="37">
+                <instance type="pasBarbedWire" uid="37">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1470,8 +1340,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>271</x>
-                        <y>251</y>
+                        <x>230.432006836</x>
+                        <y>167.684844971</y>
                         <z>0</z>
                         <width>91</width>
                         <height>101</height>
@@ -1482,7 +1352,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="41">
+                <instance type="debugEnemy" uid="41">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1511,8 +1381,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>468</x>
-                        <y>424</y>
+                        <x>427.432006836</x>
+                        <y>340.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1523,7 +1393,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="42">
+                <instance type="debugEnemy" uid="42">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1552,8 +1422,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>523</x>
-                        <y>437</y>
+                        <x>482.432006836</x>
+                        <y>353.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1564,7 +1434,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="43">
+                <instance type="debugEnemy" uid="43">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1593,8 +1463,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>444</x>
-                        <y>448</y>
+                        <x>403.432006836</x>
+                        <y>364.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1605,7 +1475,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="44">
+                <instance type="debugEnemy" uid="44">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1634,8 +1504,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>499</x>
-                        <y>461</y>
+                        <x>458.432006836</x>
+                        <y>377.684844971</y>
                         <z>0</z>
                         <width>50.400001526</width>
                         <height>50.400001526</height>
@@ -1649,7 +1519,33 @@
             </instances>
             <effects />
         </layer>
+        <layer name="Interface" sid="841050976257784">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances />
+            <effects />
+        </layer>
     </layers>
-    <nonworld-instances />
+    <nonworld-instances>
+        <instance type="tileArray" uid="30">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
+    </nonworld-instances>
     <effects />
 </c2layout>

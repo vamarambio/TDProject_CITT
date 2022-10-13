@@ -5,37 +5,37 @@
     <events>
         <event-block sid="812864790371660">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="398608092711022" type="Player">
+                <condition id="-7" name="Compare instance variable" sid="398608092711022" type="player">
                     <param id="0" name="Instance variable">HP</param>
                     <param id="1" name="Comparison">3</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="761121115077382" type="Player" />
+                <action id="-9" name="Destroy" sid="761121115077382" type="player" />
             </actions>
         </event-block>
         <event-block sid="669367223508653">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="117147731987805" type="Goal">
+                <condition id="-7" name="Compare instance variable" sid="117147731987805" type="debugGoal">
                     <param id="0" name="Instance variable">HP</param>
                     <param id="1" name="Comparison">3</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="873119118929787" type="Goal" />
+                <action id="-9" name="Destroy" sid="873119118929787" type="debugGoal" />
             </actions>
         </event-block>
         <event-block sid="211069283336450">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="856629202638269" type="Enemy">
-                    <param id="0" name="Object">Player</param>
+                <condition id="0" name="On collision with another object" sid="856629202638269" type="debugEnemy">
+                    <param id="0" name="Object">player</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="670561722677249" type="Enemy" />
-                <action id="-12" name="Subtract from" sid="179566577707714" type="Player">
+                <action id="-9" name="Destroy" sid="670561722677249" type="debugEnemy" />
+                <action id="-12" name="Subtract from" sid="179566577707714" type="player">
                     <param id="0" name="Instance variable">HP</param>
                     <param id="1" name="Value">5</param>
                 </action>
@@ -43,15 +43,15 @@
         </event-block>
         <event-block sid="999580738832570">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="278283850406682" type="Enemy">
-                    <param id="0" name="Object">Goal</param>
+                <condition id="0" name="On collision with another object" sid="278283850406682" type="debugEnemy">
+                    <param id="0" name="Object">debugGoal</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="562953282692967" type="Enemy" />
-                <action id="-12" name="Subtract from" sid="945234012532451" type="Goal">
+                <action id="-9" name="Destroy" sid="562953282692967" type="debugEnemy" />
+                <action id="-12" name="Subtract from" sid="945234012532451" type="debugGoal">
                     <param id="0" name="Instance variable">HP</param>
-                    <param id="1" name="Value">Enemy.HP</param>
+                    <param id="1" name="Value">debugEnemy.HP</param>
                 </action>
             </actions>
         </event-block>
@@ -63,28 +63,28 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Pathfinding" id="0" name="Find path" sid="438688754955943" type="Enemy">
-                    <param id="0" name="X">Goal.X</param>
-                    <param id="1" name="Y">Goal.Y</param>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="438688754955943" type="debugEnemy">
+                    <param id="0" name="X">debugGoal.X</param>
+                    <param id="1" name="Y">debugGoal.Y</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="150067184853933">
             <conditions>
-                <condition behavior="Pathfinding" id="0" name="On path found" sid="647940012766951" type="Enemy" />
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="647940012766951" type="debugEnemy" />
             </conditions>
             <actions>
-                <action behavior="Pathfinding" id="1" name="Move along path" sid="447605211689813" type="Enemy" />
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="447605211689813" type="debugEnemy" />
             </actions>
         </event-block>
         <event-block sid="230296439512015">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="435569002966571" type="Enemy">
-                    <param id="0" name="Object">BarbedWire</param>
+                <condition id="0" name="On collision with another object" sid="435569002966571" type="debugEnemy">
+                    <param id="0" name="Object">pasBarbedWire</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-12" name="Subtract from" sid="987771717867213" type="Enemy">
+                <action id="-12" name="Subtract from" sid="987771717867213" type="debugEnemy">
                     <param id="0" name="Instance variable">HP</param>
                     <param id="1" name="Value">10</param>
                 </action>
@@ -92,15 +92,52 @@
         </event-block>
         <event-block sid="615192356917601">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="753482610189260" type="Enemy">
+                <condition id="-7" name="Compare instance variable" sid="753482610189260" type="debugEnemy">
                     <param id="0" name="Instance variable">HP</param>
                     <param id="1" name="Comparison">3</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="752657272339148" type="Enemy" />
+                <action id="-9" name="Destroy" sid="752657272339148" type="debugEnemy" />
             </actions>
+        </event-block>
+        <event-block sid="547927885460009">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="196539349157308" type="System" />
+            </conditions>
+            <actions>
+                <action id="1" name="Set size" sid="495183523038293" type="tileArray">
+                    <param id="0" name="Width">25</param>
+                    <param id="1" name="Height">20</param>
+                    <param id="2" name="Depth">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="464335010033690">
+                    <conditions>
+                        <condition id="3" name="For each element" sid="753451536576274" type="tileArray">
+                            <param id="0" name="Axes">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set at XY" sid="186759038137290" type="tileArray">
+                            <param id="0" name="X">tileArray.CurX</param>
+                            <param id="1" name="Y">tileArray.CurY</param>
+                            <param id="2" name="Value">floor(random(0,2))</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="733665610448647" type="System">
+                            <param id="0" name="Object to create">mapTiles</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">32 + (tileArray.CurX*64)</param>
+                            <param id="3" name="Y">32 + (tileArray.CurY*64)</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="761307763695877" type="mapTiles">
+                            <param id="0" name="Frame number">tileArray.CurValue</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

@@ -1,13 +1,13 @@
 # TDProject_CITT
 
-## Para proximo jueves
+## Deadline: 2023-1
+
+## Ideas de entidades: Insertar link de drive
+
+## To-do
 Visualizar HP de meta
 Visualizar HP de jugador
 Visualizar HP de enemigos
 Refinar sprites
-Construir layout de nivel
+Construir interfaz
 
-## Para siguiente jueves
-Crear torreta_debug con comportamientos
-Crear interfaz
-Darle ataque al jugador

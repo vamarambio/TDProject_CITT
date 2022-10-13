@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="1">Layout 1</layout>
-        <event-sheet order="2">Event sheet 1</event-sheet>
+        <layout active="1" order="0">Layout 1</layout>
+        <event-sheet order="1">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -28,13 +28,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/Player/" />
-        <folder expanded="1" path="animation-folder/Enemy/" />
-        <folder expanded="1" path="animation-folder/Goal/" />
-        <folder expanded="1" path="animation-folder/Terrain0/" />
-        <folder expanded="1" path="animation-folder/Terrain1/" />
-        <folder expanded="1" path="animation-folder/BarbedWire/" />
-        <folder expanded="1" path="animation-folder/barMaxHP/" />
-        <folder expanded="1" path="animation-folder/barHP/" />
+        <folder expanded="1" path="animation-folder/player/" />
+        <folder expanded="1" path="animation-folder/debugEnemy/" />
+        <folder expanded="1" path="animation-folder/debugGoal/" />
+        <folder expanded="1" path="animation-folder/pasBarbedWire/" />
+        <folder expanded="1" path="animation-folder/mapTiles/" />
     </folders-expanded>
 </c2uistate>
