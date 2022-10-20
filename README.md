@@ -11,3 +11,9 @@ Visualizar HP de enemigos
 Refinar sprites
 Construir interfaz
 
+## Tilemap
+- Primera fila: Suelo y camino
+- Segunda fila: Paredes
+- Tercera fila: Metas activas e inactivas
+- Cuarta fila: Plataformas de torreta
+

@@ -10,21 +10,18 @@
     <unique-id>1lj1k91b8259d</unique-id>
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
-        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
-        <plugin author="Scirra" id="sliderbar" version="1">Slider bar</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
-        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -70,16 +67,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="590034184322761" speed="5">
                     <frame duration="1" hotspotX="0.585034" hotspotY="0.554913">
                         <collision-poly>
-                            <point x="0.312925" y="0" />
-                            <point x="0.67347" y="0" />
-                            <point x="0.673469" y="0.277457" />
-                            <point x="0.578232" y="0.531792" />
-                            <point x="0.768707" y="0.739884" />
-                            <point x="0.772109" y="1" />
-                            <point x="0.238095" y="1" />
-                            <point x="0.234694" y="0.731214" />
-                            <point x="0.44898" y="0.531792" />
-                            <point x="0.312925" y="0.268786" />
+                            <point x="0.375" y="0.375" />
+                            <point x="0.5" y="0.109375" />
+                            <point x="0.59375" y="0.40625" />
+                            <point x="0.734375" y="0.5" />
+                            <point x="0.546875" y="0.546875" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.421875" y="0.578125" />
+                            <point x="0.265625" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -110,17 +105,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="debugGoal" sid="267315988539428">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="HP" sid="472535283521533" type="number" />
-            </instance-variables>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="579532722407397" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Mouse" sid="667392320512056">
             <plugin id="Mouse" />
         </object-type>
@@ -132,52 +116,30 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="ProgressBar" sid="568382526630783">
-            <plugin id="progressbar" />
-        </object-type>
-        <object-type name="SliderBar" sid="588049563419961">
-            <plugin id="sliderbar" />
-            <behaviors>
-                <behavior-type name="Timer" sid="127453208774132">
-                    <behavior id="Timer" />
-                </behavior-type>
-            </behaviors>
-        </object-type>
-        <object-type global="1" name="tileArray" sid="414689464635378">
-            <plugin id="Arr" />
-        </object-type>
-        <object-type name="Tilemap" sid="158179230155871">
-            <plugin id="Tilemap" />
-            <texture />
-            <tiles />
-        </object-type>
-        <object-type name="mapTiles" sid="590022184597099">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="902724419483323" speed="0">
-                    <frame duration="0" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite" sid="519521259817838">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="922380264294849" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="debugTurret" sid="614035998518395">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Turret" sid="951610283213111">
                     <behavior id="Turret" />
                 </behavior-type>
+                <behavior-type name="Solid" sid="459289220355441">
+                    <behavior id="solid" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="131377199997553" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.148" y="0.148" />
+                            <point x="0.5" y="0.048" />
+                            <point x="0.748" y="0.252" />
+                            <point x="1" y="0.5" />
+                            <point x="0.768" y="0.768" />
+                            <point x="0.5" y="0.988" />
+                            <point x="0.148" y="0.852" />
+                            <point x="0.016" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -191,6 +153,27 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="380486818464057" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tilemapSolid" sid="915065869198882">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="299480598631492">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Citt 9\Documents\TDProject_CITT\Assets\debugTilemap.png" />
+            <tiles />
+        </object-type>
+        <object-type name="debugGoal" sid="951206387270498">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="HP" sid="219474463556651" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="732509791103587" speed="5">
+                    <frame duration="1" hotspotX="0.015625" hotspotY="0.53125" original-source="C:\Users\Citt 9\Documents\TDProject_CITT\Assets\debugTilemap.png" />
                 </animation>
             </animation-folder>
         </object-type>

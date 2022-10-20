@@ -13,6 +13,11 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="761121115077382" type="player" />
+                <action behavior="Pathfinding" id="2" name="Stop" sid="368095932082323" type="debugEnemy" />
+                <action id="-16" name="Wait" sid="681560277509831" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="835808092994620" type="System" />
             </actions>
         </event-block>
         <event-block sid="669367223508653">
@@ -25,6 +30,42 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="873119118929787" type="debugGoal" />
+                <action behavior="Pathfinding" id="2" name="Stop" sid="860976968185741" type="debugEnemy" />
+                <action id="-16" name="Wait" sid="749908952327703" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="498111491197861" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="917488733728210">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="682687506563443" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="438688754955943" type="debugEnemy">
+                    <param id="0" name="X">debugGoal.X</param>
+                    <param id="1" name="Y">debugGoal.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="150067184853933">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="647940012766951" type="debugEnemy" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="447605211689813" type="debugEnemy" />
+            </actions>
+        </event-block>
+        <event-block sid="615192356917601">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="753482610189260" type="debugEnemy">
+                    <param id="0" name="Instance variable">HP</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="752657272339148" type="debugEnemy" />
             </actions>
         </event-block>
         <event-block sid="211069283336450">
@@ -55,28 +96,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="917488733728210">
-            <conditions>
-                <condition id="0" name="On click" sid="682687506563443" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Pathfinding" id="0" name="Find path" sid="438688754955943" type="debugEnemy">
-                    <param id="0" name="X">debugGoal.X</param>
-                    <param id="1" name="Y">debugGoal.Y</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="150067184853933">
-            <conditions>
-                <condition behavior="Pathfinding" id="0" name="On path found" sid="647940012766951" type="debugEnemy" />
-            </conditions>
-            <actions>
-                <action behavior="Pathfinding" id="1" name="Move along path" sid="447605211689813" type="debugEnemy" />
-            </actions>
-        </event-block>
         <event-block sid="230296439512015">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="435569002966571" type="debugEnemy">
@@ -95,61 +114,12 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="615192356917601">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="753482610189260" type="debugEnemy">
-                    <param id="0" name="Instance variable">HP</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="752657272339148" type="debugEnemy" />
-            </actions>
-        </event-block>
-        <event-block sid="547927885460009">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="196539349157308" type="System" />
-            </conditions>
-            <actions>
-                <action id="1" name="Set size" sid="495183523038293" type="tileArray">
-                    <param id="0" name="Width">25</param>
-                    <param id="1" name="Height">20</param>
-                    <param id="2" name="Depth">1</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="464335010033690">
-                    <conditions>
-                        <condition id="3" name="For each element" sid="753451536576274" type="tileArray">
-                            <param id="0" name="Axes">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="3" name="Set at XY" sid="186759038137290" type="tileArray">
-                            <param id="0" name="X">tileArray.CurX</param>
-                            <param id="1" name="Y">tileArray.CurY</param>
-                            <param id="2" name="Value">floor(random(0,2))</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="733665610448647" type="System">
-                            <param id="0" name="Object to create">mapTiles</param>
-                            <param id="1" name="Layer">tileArray.CurValue</param>
-                            <param id="2" name="X">32 + (tileArray.CurX*64)</param>
-                            <param id="3" name="Y">32 + (tileArray.CurY*64)</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="761307763695877" type="mapTiles">
-                            <param id="0" name="Frame number">tileArray.CurValue</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
         <event-block sid="752226098110293">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="383539224581058" type="System" />
             </conditions>
             <actions>
-                <action behavior="Turret" id="0" name="Acquire target" sid="882226381660528" type="debugTurret">
+                <action behavior="Turret" id="1" name="Add object to target" sid="882226381660528" type="debugTurret">
                     <param id="0" name="Target">debugEnemy</param>
                 </action>
             </actions>
@@ -159,7 +129,7 @@
                 <condition behavior="Turret" id="1" name="On shoot" sid="607777894255992" type="debugTurret" />
             </conditions>
             <actions>
-                <action id="0" name="Spawn another object" sid="801186047098246" type="debugBullet">
+                <action id="0" name="Spawn another object" sid="801186047098246" type="debugTurret">
                     <param id="0" name="Object">debugBullet</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="Image point">1</param>
@@ -181,7 +151,7 @@
                 <action behavior="Flash" id="0" name="Flash" sid="418181201591586" type="debugEnemy">
                     <param id="0" name="&apos;On&apos; time">0.1</param>
                     <param id="1" name="&apos;Off&apos; time">0.1</param>
-                    <param id="2" name="Duration">0.5</param>
+                    <param id="2" name="Duration">0.1</param>
                 </action>
             </actions>
         </event-block>
